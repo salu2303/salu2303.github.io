@@ -6,62 +6,42 @@ and open the template in the editor.
 -->
 <html>
     <head>
-      <style>
-        .container {
-background-image: url("static\i1.jtg");
-  width: 100%;
-  margin: 0 ;
-  
-}
-  
 
-.container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  height: 97vh;
-  }
-  body{
-    margin: 0;
-    
-  }
-  .container .c{
-      font-style: oblique;
-      background-color:lightyellow;
-      
-  }
-  h1{
-      font-style:unset;
-  }
-
-        </style>
-        </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="index.css">  
+    </head>
     <body>
     
-        <div class="container" >
-            <div class="c">
-            <center>
-            <a href="admin.html" ><button > ADMIN	</button></a>
-            <a href="faculty.html"><button>FACULTY</button></a>
-            <a href="student.html"><button>STUDENT</button></a>
-            </center></div>
-          <img src="static/i1.jpg" alt="Notebook" style="width:100%;">
           
-     
-          <div class="content"> 
-              <center><h1>STAY MOTIVATED!!</h1></center>
-      </div></div>
-  <!--       <input type="submit" value="ADMIN" 
+      <nav class="c">
+        <center>
+            <a href="admin.html" class="active">ADMIN</a>
+            <a href="faculty.html">FACULTY</a>
+            <a href="student.html">STUDENT</a>
+        </center>
+    </nav>
+
+    <div class="container">
+
+        <img src="static/i1.jpg" alt="Notebook" style="width:100%;">
+
+
+        <div class="content">
+            <center>
+                <h1>STAY MOTIVATED!!</h1>
+                <h1>AND</h1>
+                <h1>WORK HARD</h1>
+            </center>
+        </div>
+    </div>
+    <!--       <input type="submit" value="ADMIN" 
     onclick="window.location='admin.html'" />
          <input type="submit" value="STUDENT" 
     onclick="window.location='student.html'" />
     
        <input type="submit" value="FACULTY" 
     onclick="window.location='faculty.html';" />
-  -->      
+  -->
       
     </body>
 </html>

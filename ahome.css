@@ -1,0 +1,39 @@
+.btn{
+    border-radius: 10px;
+    width: 180px;
+    height: 130px;
+    margin-top: 30px;
+    color: black;
+    background-color: snow;
+    box-shadow: 0 4px #999;
+    font-size: large;
+    
+}
+.btn:hover{
+    background-color: black ;
+    color: snow;
+}
+.header{
+    padding: 20px;
+  text-align: center;
+  background:black;
+  color: white;
+  font-size: 50px;
+}
+.bbtn{
+    border-radius: 10px;
+    width: 360px;
+    height: 50px;
+    margin-top: 50px;
+    color: #fff;
+    background-color: black;
+    box-shadow: 0 4px snow;
+}
+.bbtn:hover{
+    background-color: snow;
+    color: black;
+}
+body{
+    background-image: url("static/i9.gif");
+    background-size: cover;
+}
