@@ -9,13 +9,29 @@ and open the template in the editor.
         <title>ADMIN</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="addstudent.css">  
+    
     </head>
     <body>
+        <div class="header">
+            STAY MOTIVATED AND WORK HARD
+            </div>
+        
         <center>
+    <p align="right">            <a href="ahome.html" ><button class="bbtn">BACK</button></a></p>
         <form action="test.html" method="post">
-            STUDENT USERNAME:<input type="text" name="username"></br>
-            PASSWORD:<input type="password" name="password"></br>
-            BRANCH: <select id="dept" name="depat">
+            <table>
+                <tr>
+                    <td class="fon"><b>ENTER STUDENT'S DETAILS HERE</b> </td>
+                </tr>
+                <tr>
+                    
+            <td><input type="text" placeholder="STUDENT'S USERNAME" name="username"></td></tr></br>
+            <tr>
+           <td><input type="password" placeholder="STUDENT'S PASSWORD" name="password"></td></tr></br>
+            <td> <select id="dept" name="depat">
+                <option value="sbranch">SELECT BRANCH</option>
+                
                 <option value="COMPUTER">COMPUTER</option>
                 <option value="IT">IT</option>
                 <option value="CHEMICAL">CHEMICAL</option>
@@ -23,9 +39,12 @@ and open the template in the editor.
                 <option value="MECHANICAL">MECHANICAL</option>
                 <option value="ec">EC</option>
                 <option value="IC">IC</option>
-                 </select></br>
-            SEMESTER: <select id="sem" name="seme">
-                    <option value="sem1">SEM1</option>
+                 </select></td></tr></br>
+                 <tr>
+            <td> <select id="sem" name="seme" class="t"> 
+                <option value="sem">SELECT SEMESTER</option>
+                        
+                <option value="sem1">SEM1</option>
                     <option value="sem2">SEM2</option>
                     <option value="sem3">SEM3</option>
                     <option value="sem4">SEM4</option>
@@ -34,10 +53,14 @@ and open the template in the editor.
                     <option value="sem7">SEM7</option>
                     <option value="sem8">SEM8</option>
                         
-                </select></br>
-             
+                </select></td></tr></br>
+            <tr>
+                <td>
+                <a href="test.html" ><button class="btn">ADD THIS STUDENT</button></a>
+                    </td></tr><tr>
+                    <td>
+                    
+             </table>
             </form>
-            <a href="test.html" ><button>ADD THIS STUDENT</button></a>
-            <a href="ahome.html" ><button>BACK</button></a>
-    </center></body>
+                </center></div></body>
 </html>
