@@ -15,10 +15,21 @@
 }
 .header{
     padding: 20px;
-  text-align: center;
+  text-align: left;
   background:black;
   color: white;
-  font-size: 50px;
+  font-size: 20px;
+  font-family: cursive;
+}
+.about{
+    border-radius: 20px;
+    width: 90px; 
+    height: 30px;   
+    box-shadow:0 2px gray;
+}
+.about:hover{
+    background-color: black;
+    color: blanchedalmond;
 }
 .bbtn{
     border-radius: 10px;
@@ -36,4 +47,9 @@
 body{
     background-image: url("static/dem2.jpg");
     background-size: cover;
+}
+.footer{
+    margin-top: 200px;
+    background-color: darkgrey;
+    font-family: cursive;
 }
