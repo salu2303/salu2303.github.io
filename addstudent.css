@@ -37,6 +37,7 @@ input[type=text], input[type=password]
     select{
         border-radius: 10px;
         padding: 12px 170px ; 
+        color:black;
     }
     select.t{
         border-radius: 10px;
