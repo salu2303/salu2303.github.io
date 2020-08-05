@@ -10,11 +10,16 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="admin.css">  
+      
     
     </head>
     <body>
+      
+
+      
       <div class="cont">
- <center>    
+ <center>     
+
        
    
 
@@ -27,14 +32,14 @@ and open the template in the editor.
 
 
 <tr>
-   <td><input type="text"  placeholder="Enter Username "name="username" required></br></br></td></tr>
+   <td><input  id ="name" type="text"  placeholder="Enter Username "name="username" required></br></br></td></tr>
     <tr>
-      <td><input type="password" name="password" placeholder="Password" required> </br   ></br></td></tr>
+      <td><input id="pass"  type="password" name="password" placeholder="Password" required> </br   ></br></td></tr>
 
       <tr>
 
-        <td>  <select id="hod" name="hod" >
-          <option value="Select Branch">Select Branch</option>
+        <td>  <select id="hod" name="hod">
+          <option value="sbranch">Select Branch</option>
            
            <option value="COMPUTER">COMPUTER</option>
            <option value="IT">IT</option>
@@ -57,11 +62,13 @@ and open the template in the editor.
         <input type="checkbox" checked="checked" name="remember" style="margin-left:100px"> Remember me
       </label></td></tr>
 
-<tr><td>       <a href="ahome.html" ><button class="sbt" style="margin-left:250px"  >SUBMIT</button></a></td>
+<tr><td>     <button onclick="display()"class="sbt" style="margin-left:250px"   >SUBMIT</button></td>
   </tr>
   <tr><td>       <a href="index.html" ><button class="sbt" style="margin-left:250px"  >BACK</button></a></td>
   </tr>
 </table>
-    
-</center></div></body>
+     
+</center></div><script src="admin.js">
+</script> 
+</body>
 </html>

@@ -28,25 +28,25 @@ and open the template in the editor.
         
         <center>
     <p align="right">            <a href="ahome.html" ><button class="bbtn">BACK</button></a></p>
-        <form action="test.html" method="post">
+       
             <table>
                 <tr>
                     <td class="fon"><b>ENTER FACULTY'S DETAILS HERE</b> </td>
                 </tr>
                 <tr>
                     
-            <td><input type="text" placeholder="FACULTY'S USERNAME" name="username"></td></tr></br>
+            <td><input id="name" type="text" placeholder="FACULTY'S USERNAME" name="username"></td></tr></br>
             <tr>
-           <td><input type="password" placeholder="FACULTY'S PASSWORD" name="password"></td></tr></br>
+           <td><input id="pass" type="password" placeholder="FACULTY'S PASSWORD" name="password"></td></tr></br>
            
             <tr>
                 <td>
-                <a href="test.html" ><button class="btn">REMOVE THIS FACULTY</button></a>
+                <button onclick="alertrem()"class="btn">REMOVE THIS FACULTY</button>
                     </td></tr><tr>
                     <td>
                     
              </table>
-            </form>
+        
                 </center></div>
                 <div class=footer>
                     <b>ABOUT US</b></br>
@@ -58,6 +58,8 @@ and open the template in the editor.
                     <center>
                       <i class="em em-copyright" aria-role="presentation" aria-label="COPYRIGHT SIGN"></i>SALONI PATEL
                   </center>
-                  </div>
+                  </div><script src="addstudent.js">
+                </script> 
+ 
             </body>
 </html>

@@ -27,17 +27,17 @@ and open the template in the editor.
         
         <center>
     <p align="right">            <a href="ahome.html" ><button class="bbtn">BACK</button></a></p>
-        <form action="test.html" method="post">
+    
             <table>
                 <tr>
                     <td class="fon"><b>ENTER STUDENT'S DETAILS HERE</b> </td>
                 </tr>
                 <tr>
                     
-            <td><input type="text" placeholder="STUDENT'S USERNAME" name="username"></td></tr></br>
+            <td><input id ="name" type="text" placeholder="STUDENT'S USERNAME" name="username"></td></tr></br>
             <tr>
-           <td><input type="password" placeholder="STUDENT'S PASSWORD" name="password"></td></tr></br>
-            <td> <select id="dept" name="depat">
+           <td><input id="pass" type="password" placeholder="STUDENT'S PASSWORD" name="password"></td></tr></br>
+            <td> <select id="dept" name="depat" >
                 <option value="sbranch">SELECT BRANCH</option>
                 
                 <option value="COMPUTER">COMPUTER</option>
@@ -50,7 +50,7 @@ and open the template in the editor.
                  </select></td></tr></br>
                  <tr>
             <td> <select id="sem" name="seme" class="t"> 
-                <option value="sem">SELECT SEMESTER</option>
+                <option value="seme">SELECT SEMESTER</option>
                         
                 <option value="sem1">SEM1</option>
                     <option value="sem2">SEM2</option>
@@ -64,12 +64,12 @@ and open the template in the editor.
                 </select></td></tr></br>
             <tr>
                 <td>
-                <a href="test.html" ><button class="btn">ADD THIS STUDENT</button></a>
+                <button onclick="alertbox()" class="btn">ADD THIS STUDENT</button>
                     </td></tr><tr>
                     <td>
                     
              </table>
-            </form>
+          
            
                 </center></div>
                 <div class=footer>
@@ -82,6 +82,7 @@ and open the template in the editor.
                     <center>
                       <i class="em em-copyright" aria-role="presentation" aria-label="COPYRIGHT SIGN"></i>SALONI PATEL
                   </center>
-                  </div>
+                  </div><script src="addstudent.js">
+                </script> 
                 </body>
 </html>
