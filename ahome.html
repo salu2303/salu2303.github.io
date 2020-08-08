@@ -19,7 +19,7 @@ and open the template in the editor.
            <table>
                <tr>
                    <td> 
-           <a href="test1.html"> <button class="about" style="margin-left: 1200px;" > ABOUT US</button> </a></td>
+           <a href="test1.html"> <button class="about" style="margin-left: 1100px;" > ABOUT US</button> </a></td>
            <td><a href="ahome.html"> <button class="about"> HOME</button> </a></td>
            <td><a href="index.html"> <button class="about"> LOGOUT</button> </a></td>
               
@@ -35,7 +35,13 @@ and open the template in the editor.
         <a href="addann.html" ><button class="btn">NOTICE</button></a>
         <a href="test.html" ><button class="btn">VIEW ALL DETAILS</button></a>
         <p class="date"><span id="datetime"></span></p>
-
+        <h2>To Do List</h2>
+        <input type="text" id="myinput" class="todo" ></br>
+        <a href="#"> <button class="add" onclick="addelement()"> ADD</button> </a>
+      
+        <ul id="myUL" class="e"> 
+            
+          </ul>
         <script type="text/javascript"> 
             function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
@@ -43,8 +49,9 @@ mytime=setTimeout('display_ct()',refresh)
 }
 function display_ct() {
 var x = new Date()
-var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getYear(); 
-x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+var x1;
+// var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getYear(); 
+x1 =    x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
 document.getElementById('ct').innerHTML = x1;
 display_c();
  }
@@ -101,6 +108,6 @@ display_c();
             <center>
               <i class="em em-copyright" aria-role="presentation" aria-label="COPYRIGHT SIGN"></i>SALONI PATEL
           </center>
-          </div>
+          </div><script src="ahome.js"></script>
         </body>
 </html>

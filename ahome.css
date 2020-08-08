@@ -10,7 +10,7 @@
     
 }
 .btn:hover{
-    background-color:black ;
+    background-color:green;
     color: snow;
 }
 
@@ -32,7 +32,7 @@
     box-shadow:0 2px gray;
 }
 .about:hover{
-    background-color: gray;
+    background-color: black;
     color: blanchedalmond;
 }
 .bbtn{
@@ -68,4 +68,21 @@ body{
     font-weight: 1000;
     font-size: x-large;
     text-align: right   ;
+}
+.add{
+    height: 30px;
+    width: 210px;
+    border-radius: 12px;
+   
+}
+.add:hover{
+    background-color: hotpink;
+}
+.todo{
+    border-radius: 12px;
+    width: 200px;
+    height: 100px;
+}
+.e{
+    font-size: x-large;
 }
