@@ -19,7 +19,7 @@ and open the template in the editor.
            <table>
                <tr>
                    <td> 
-           <a href="test1.html"> <button class="about" style="margin-left: 1100px;" > ABOUT US</button> </a></td>
+           <a href="test1.html"> <button class="about" style="margin-left: 1200px;" > ABOUT US</button> </a></td>
            <td><a href="ahome.html"> <button class="about"> HOME</button> </a></td>
            <td><a href="index.html"> <button class="about"> LOGOUT</button> </a></td>
               
@@ -28,7 +28,32 @@ and open the template in the editor.
             
   
         </div>
-    <center>
+        <a href="addstudent.html"> <button class="btn"> ADD STUDENT </button> </a>
+        <a href="remstudent.html" ><button class="btn">REMOVE STUDENT</button></a>
+        <a href="addfaculty.html" ><button class="btn">ADD FACULTY</button></a>
+        <a href="remfaculty.html" ><button class="btn">REMOVE FACULTY</button></a>
+        <a href="addann.html" ><button class="btn">NOTICE</button></a>
+        <a href="test.html" ><button class="btn">VIEW ALL DETAILS</button></a>
+        <p class="date"><span id="datetime"></span></p>
+
+        <script type="text/javascript"> 
+            function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+function display_ct() {
+var x = new Date()
+var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getYear(); 
+x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ct').innerHTML = x1;
+display_c();
+ }
+ </script>
+            <div class="date">
+                <body onload=display_ct();>
+                    <span id='ct' ></span></div>
+                 
+   <!--<center>
         
         <table>   
             
@@ -62,10 +87,11 @@ and open the template in the editor.
         <tr>
             <td colspan="2"> <a href="admin.html"><button class="bbtn">BACK</button></a></td>
             </tr>
-       </table></center>
+       </table></center>  -->
+      
      
-         </div>
-         <div class=footer>
+         
+       <div class=footer>
             <b>ABOUT US</b></br>
             FOR ANY DOUBT YOU CAN </br>FEEL FREE TO ASK!!</br>
             <i class="em em-calling" aria-role="presentation" aria-label="MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT"></i>+12342535</br>
