@@ -15,6 +15,8 @@ function alertbox(){
     else{
         alert("Please Enter All Credentials");
     }
+    document.getElementById("fd").innerHTML="Details will be shown here.."; 
+
    
 
 }
@@ -45,4 +47,4 @@ function display_c(){
     x1 =    x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
     document.getElementById('ct').innerHTML = x1;
     display_c();
-     }
+    }
