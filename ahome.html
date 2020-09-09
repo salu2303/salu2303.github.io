@@ -6,108 +6,169 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>ADMIN</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="ahome.css">  
         <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
     </head>
     <body>
-        <div class="header">
-            !!STAY MOTIVATED!!
-           <table>
-               <tr>
-                   <td> 
-           <a href="test1.html"> <button class="about" style="margin-left: 1100px;" > ABOUT US</button> </a></td>
-           <td><a href="ahome.html"> <button class="about"> HOME</button> </a></td>
-           <td><a href="index.html"> <button class="about"> LOGOUT</button> </a></td>
-              
-        </tr></table>
-            
-            
-  
-        </div>
-        <a href="addstudent.html"> <button class="btn"> ADD STUDENT </button> </a>
-        <a href="remstudent.html" ><button class="btn">REMOVE STUDENT</button></a>
-        <a href="addfaculty.html" ><button class="btn">ADD FACULTY</button></a>
-        <a href="remfaculty.html" ><button class="btn">REMOVE FACULTY</button></a>
-        <a href="addann.html" ><button class="btn">NOTICE</button></a>
-        <a href="test.html" ><button class="btn">VIEW ALL DETAILS</button></a>
-        <p class="date"><span id="datetime"></span></p>
-        <h2>To Do List</h2>
-        <input type="text" id="myinput" class="todo" ></br>
-        <a href="#"> <button class="add" onclick="addelement()"> ADD</button> </a>
-      
-        <ul id="myUL" class="e"> 
-            
-          </ul>
-        <script type="text/javascript"> 
-            function display_c(){
-var refresh=1000; // Refresh rate in milli seconds
-mytime=setTimeout('display_ct()',refresh)
-}
-function display_ct() {
-var x = new Date()
-var x1;
-// var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getYear(); 
-x1 =    x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
-document.getElementById('ct').innerHTML = x1;
-display_c();
- }
- </script>
-            <div class="date">
-                <body onload=display_ct();>
-                    <span id='ct' ></span></div>
-                 
-   <!--<center>
+        <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top ">
+            <a class="navbar-brand" href="#" style="color: blanchedalmond;">Stay Motivated!!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="ahome.html" style="color: blanchedalmond;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="test3.html" style="color: blanchedalmond;">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: blanchedalmond;">Logout</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+    </br>
+</br>
+      <main >  
+<div class="container" style="margin-left: 0px;" >
+        <div class="row">
         
-        <table>   
-            
-                 <tr>
-                     
-                    <td>
-                        <a href="addstudent.html"> <button class="btn"> ADD STUDENT </button> </a>
-                    </td>
-                    <td>
-                        <a href="remstudent.html" ><button class="btn">REMOVE STUDENT</button></a>
-            
-                    </td>
-                </tr>
-            <tr>
-            <td>
-                <a href="addfaculty.html" ><button class="btn">ADD FACULTY</button></a>
+            <div class="col-md-3 " style="background-color: black;height: 650px;">
+            </br>
+                <div class="row">
+                    <div class="col" >
+                        <a class="nav-link text-center" href="addstudent.html" style="color: blanchedalmond;">ADD STUDENT <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-divider"></div>
+               
+                               
+                        </div>
+                </div>
+            </br>
+                <div class="row">
+                    <div class="col">
+                        <a class="nav-link text-center" href="remstudent.html" style="color: blanchedalmond;">REMOVE STUDENT <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-divider"></div>
+                           
+                        </div>
+                </div>
+            </br>
+                <div class="row">
+                    <div class="col" >
+                        <a class="nav-link text-center" href="addfaculty.html" style="color: blanchedalmond;">ADD FACULTY <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-divider"></div>
+                         
+                        </div>
+                </div>
+            </br>
+            <div class="row">
+                <div class="col" >
+                    <a class="nav-link text-center" href="remfaculty.html" style="color: blanchedalmond;">REMOVE FACULTY <span class="sr-only">(current)</span></a>
+                    <div class="dropdown-divider"></div>
+                      
+                    </div>
+            </div>
+        </br>
+        <div class="row">
+            <div class="col" >
+                <a class="nav-link text-center" href="addann.html" style="color: blanchedalmond;">UPLOAD NOTICE <span class="sr-only">(current)</span></a>
+                <div class="dropdown-divider"></div>
+             
+                </div>
+        </div>
+    </br>
+    <div class="row">
+        <div class="col" >
+            <a class="nav-link text-center" href="#.html" style="color: blanchedalmond;">VIEW DETAILS <span class="sr-only">(current)</span></a>
+            <div class="dropdown-divider"></div>
+        
+            </div>
+    </div>
+</br>
+                       
+                       
+            </div>
+            <div class="col-md-9" >
+                <div class="container text-center">
                     
-            </td>
-            <td>
-            <a href="remfaculty.html" ><button class="btn">REMOVE FACULTY</button></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <a href="addann.html" ><button class="btn">GENERAL ANNOUNCEMENT</button></a>
-            </td>
-            <td>
-            <a href="test.html" ><button class="btn">VIEW ALL DETAILS</button></a>
-            </td>
-        </tr> 
-        <tr>
-            <td colspan="2"> <a href="admin.html"><button class="bbtn">BACK</button></a></td>
-            </tr>
-       </table></center>  -->
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+               
+</div>
+</main>
+
+   <footer  class="page-footer font-small relative-bottom   pt-4" style="background-color: black;">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+
+            
+                <div class="col-md-6 mt-md-0 mt-3">
+          
+                 
+                  <h5 class="text-uppercase" style="color: blanchedalmond;">We are here for you!!</h5>
+                  <p style="color: blanchedalmond;">Feel free to ask at any time!!</p>
+          
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                               <div class="col-md-3 mb-md-0 mb-3">
+          
+               
+                  
+                  <ul class="list-unstyled">
+                    <li>
+                        <h5 class="text-uppercase" style="color: blanchedalmond;">about us</h5>
+                    </li>
+                    <li>
+                   <p style="color: blanchedalmond;">    <i class="em em-calling" aria-role="presentation" aria-label="MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT"></i>+12342535</br>
+            &#9993;s123@gmail.com</p>
       
-     
-         
-       <div class=footer>
-            <b>ABOUT US</b></br>
-            FOR ANY DOUBT YOU CAN </br>FEEL FREE TO ASK!!</br>
-            <i class="em em-calling" aria-role="presentation" aria-label="MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT"></i>+12342535</br>
-            &#9993;s123@gmail.com
-      
-      
-            <center>
-              <i class="em em-copyright" aria-role="presentation" aria-label="COPYRIGHT SIGN"></i>SALONI PATEL
-          </center>
-          </div><script src="ahome.js"></script>
-        </body>
+                    
+                  </ul>
+          
+                </div>
+                
+                <div class="col-md-3 mb-md-0 mb-3">
+          
+                  
+          
+                  <ul class="list-unstyled">
+                    <li>
+                        <h5 class="text-uppercase" style="color: blanchedalmond;">follow us on</h5>  </li>
+                    <li>
+                        <label style="color: blanchedalmond;">Facebook</label>
+                    </li>
+                    <li>
+                        <label style="color: blanchedalmond;">Instagram</label>
+                    </li>
+                   
+                  </ul>
+          
+                </div>
+                </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: blanchedalmond;">© 2020 Copyright:
+            <a href="http://salu2303.github.io/" style="color: blanchedalmond;"> Saloni</a>
+          </div>
+    </footer> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+    </body>
 </html>
