@@ -71,7 +71,7 @@ and open the template in the editor.
             </br>
                 <div class="row">
                     <div class="col" >
-                        <a class="nav-link text-center" href="addfaculty.html" style="color: blanchedalmond;">ADD FACULTY <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-center"  id="af" href="addfaculty.html" style="color: blanchedalmond;">ADD FACULTY <span class="sr-only">(current)</span></a>
                         <div class="dropdown-divider"></div>
                          
                         </div>
@@ -79,7 +79,7 @@ and open the template in the editor.
             </br>
             <div class="row">
                 <div class="col" >
-                    <a class="nav-link text-center" href="remfaculty.html" style="color: blanchedalmond;">REMOVE FACULTY <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-center" id="rf" href="remfaculty.html" style="color: blanchedalmond;">REMOVE FACULTY <span class="sr-only">(current)</span></a>
                     <div class="dropdown-divider"></div>
                       
                     </div>
@@ -87,7 +87,7 @@ and open the template in the editor.
         </br>
         <div class="row">
             <div class="col" >
-                <a class="nav-link text-center" href="addann.html" style="color: blanchedalmond;">UPLOAD NOTICE <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-center" id="un" href="addann.html" style="color: blanchedalmond;">UPLOAD NOTICE <span class="sr-only">(current)</span></a>
                 <div class="dropdown-divider"></div>
              
                 </div>
@@ -95,7 +95,7 @@ and open the template in the editor.
     </br>
     <div class="row">
         <div class="col" >
-            <a class="nav-link text-center" href="#.html" style="color: blanchedalmond;">VIEW DETAILS <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-center" id="vd" href="#.html" style="color: blanchedalmond;">VIEW DETAILS <span class="sr-only">(current)</span></a>
             <div class="dropdown-divider"></div>
         
             </div>
@@ -106,7 +106,8 @@ and open the template in the editor.
             </div>
             <div class="col-md-9" >
                 <div class="container text-center"></br>
-                    <p id="i" style="font-size: xx-large;font-family: cursive;"> <p>
+                    <p id="hi" style="font: x-large;font-size: xx-large;color:chartreuse ;margin-left: 45%;">WELCOME  !!  HAVE A NICE DAY</p>
+                    <p id="i" style="font-size: xx-large;font-family:monospace;margin-left: 45%;"> <p>
                     </div>
                 </div>
         </div>
@@ -175,5 +176,114 @@ and open the template in the editor.
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
+        <script> 
+
+            $("#as").mouseenter(function(){
+                    
+                var txt1 = "<p><b>WANNA ENTER DETAILS!!!  CLICK ON THE BUTTON ADD STUDENT</br><b></br>FUNCTIONALITIES:</br>Enter Stuent's name and password as well as deparment</br>  </p>";
+                var txt2="<b > HAVE A NICE DAY</b>"  
+                
+                $("p#i").append(txt1,txt2); 
+                $("p#hi").hide('slow'); 
+                $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                
+                
+            });
+           
+            $("#as").mouseleave(function(){
+                $("p#hi").show('slow'); 
+            
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+                        $("p#i").empty();
+                        
+                });
+                
+            $("#rs").mouseenter(function(){
+                var txt1 = "<p><b>WANNA ENTER DETAILS FOR REMOVING STUDENT</br> CLICK ON THE BUTTON REMOVE STUDENT<b></p>";  
+                    var txt2 = "<p><b>FUNCTIONALITY:</br>Enter Details For Removing Record</br>HAVE A NICE DAY </b></p>";  
+                    $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                $("p#i").append(txt1,txt2); 
+                $("p#hi").hide('slow'); 
+                
+            });
+
+            $("#rs").mouseleave(function(){
+                $("p#hi").show('slow'); 
+                
+                $("p#i").empty(); 
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+              
+                });
+                $("#af").mouseenter(function(){
+                var txt1 = "<p><b>WANNA ENTER DETAILS FOR ADDING FACULTY</br> CLICK ON THE BUTTON ADD FACULTY<b></p>";  
+                    var txt2 = "<p><b>FUNCTIONALITY:</br>Enter Details For Entering Record</br>HAVE A NICE DAY </b></p>";  
+                    $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                $("p#i").append(txt1,txt2); 
+                $("p#hi").hide('slow'); 
+              
+            });
+
+            $("#af").mouseleave(function(){
+                $("p#hi").show('slow'); 
+        
+                $("p#i").empty(); 
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+              
+                });
+
+                $("#rf").mouseenter(function(){
+                var txt1 = "<p><b>WANNA ENTER DETAILS FOR REMOVING FACULTY</br> CLICK ON THE BUTTON REMOVE FACULTY<b></p>";  
+                    var txt2 = "<p><b>FUNCTIONALITY:</br>Enter Details For Removing Record</br>HAVE A NICE DAY </b></p>";  
+                    $("p#hi").hide('slow'); 
+                    $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                $("p#i").append(txt1,txt2); 
+            });
+
+            $("#rf").mouseleave(function(){
+                $("p#i").empty(); 
+                $("p#hi").show('slow'); 
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+              
+        
+                });
+
+                $("#un").mouseenter(function(){
+                var txt1 = "<p><b>GO FOR UPLOADING NOTICE</br><b></p>";  
+                    $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                $("p#i").append(txt1); 
+            });
+
+            $("#un").mouseleave(function(){
+                $("p#i").empty(); 
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+              
+                });
+
+                $("#vd").mouseenter(function(){
+                var txt1 = "<p><b>IF YOU WANT TO VIEW THE DEATILS GO THERE  </br><b></p>";  
+                    $(this).css("color", "black");
+                $(this).css("background-color", "white");
+                $("p#i").append(txt1); 
+            });
+
+            $("#vd").mouseleave(function(){
+                $("p#i").empty(); 
+                $(this).css("color", "blanchedalmond");
+                $(this).css("background-color", "black");
+              
+                });
+
+        </script>
+
     </body>
 </html>
